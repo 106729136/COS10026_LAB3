@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <meta charset ="utf-8">
+        <meta name ="description" content = "Helpdesk HTML form">
+        <meta name ="keywords" content="HTML, Form, tags">
+        <meta name = "author" content = "Danial"> 
+        <title> CWA Help Desk Appointment  </title>
+    </head>
+
+    <body> 
+        <img src = "logo.png" alt = "Swinburne Logo" width = "120 " height = "60" >
+        <h1> CWA Help Desk Appointment  </h1>
+        <p> The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+        <p> Check Blackboard for when CWA tutors will be there.</p>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+          <fieldset>
+             <legend> Student details </legend>
+              <P> 
+                <label for ="studentID"> Student ID: </label>
+                <input type = "text" name = "studentID" id = "studentID"  pattern = "[0-9]{7,10}" required > 
+
+                <br>
+                <br> 
+
+                <label for ="Given name"> Given name: </label>
+                <input type = "text" name = "Given name" id = "Given name" pattern ="[A-Za-z\s]+" required>
+                <label for ="Family name"> Family name: </label>
+                <input type = "text" name = "Family name" id = "Family name" pattern ="[A-Za-z\s]+" required>
+               </P>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Your unit  </legend>
+                <p>
+                    <label for = "COS10011"> COS10011 </label>
+                    <input type = "radio" name = "unit" id = "COS10011" value = "COS10011" required>
+                    <label for = "COS60004"> COS60004 </label>
+                    <input type = "radio" name = "unit" id = "COS60004" value = "COS60004" required> 
+                    <label for = "COS60007"> COS60007 </label>
+                    <input type = "radio" name = "unit" id = "COS60007" value = "COS60007" required>
+
+
+                    Your Tutor 
+
+                </p>
+            </fieldset>
+
+
+
+           <input type = "submit" value = "Submit Now"> 
+
+        </form>
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+</html>
