@@ -17,7 +17,7 @@
           <fieldset>
              <legend> Student details </legend>
               <P> 
-                <label for ="studentID"> Student ID: </label>
+                <label for ="StudentID"> Student ID: </label>
                 <input type = "text" name = "studentID" id = "studentID"  pattern = "[0-9]{7,10}" required > 
 
                 <br>
@@ -35,21 +35,72 @@
                 <legend> Your unit  </legend>
                 <p>
                     <label for = "COS10011"> COS10011 </label>
-                    <input type = "radio" name = "unit" id = "COS10011" value = "COS10011" required>
+                    <input type = "checkbox" name = "Unit" id = "COS10011" value = "COS10011" checked>
                     <label for = "COS60004"> COS60004 </label>
-                    <input type = "radio" name = "unit" id = "COS60004" value = "COS60004" required> 
+                    <input type = "checkbox" name = "Unit" id = "COS60004" value = "COS60004" > 
                     <label for = "COS60007"> COS60007 </label>
-                    <input type = "radio" name = "unit" id = "COS60007" value = "COS60007" required>
+                    <input type = "checkbox" name = "Unit" id = "COS60007" value = "COS60007" >
 
+                    <br> 
+                    <br> 
 
-                    Your Tutor 
+                 <label for = "Tutor"> Your Tutor</label> 
+                    <select name = "Tutor" id = "Tutor" required>
+                        <option value = ""> Please select a tutor</option>
+                        <option value = "Ali"> Ali </option>
+                        <option value = "Muthu"> Muthu </option>
+                        <option value = "Lee"> Lee </option>
+                    </select>
 
                 </p>
             </fieldset>
 
+            <fieldset>
+                <legend> Issue </legend>
+                <p> 
+                    <label for = "HTML"> HTML </label>
+                    <input type = "checkbox" name = "Issue" id="HTML" value = "HTML" >
+                    <label for = "CSS"> CSS </label>
+                    <input type = "checkbox" name = "Issue" id="CSS" value = "CSS" >
+                    <label for = "JavaScript"> JavaScript</label>
+                    <input type = "checkbox" name = "Issue" id="PHP" value ="PHP">
+                    <label for = "MySQL"> MySQL</label>
+                    <input type = "checkbox" name = "Issue" id="MySQL" value ="MySQL">
+
+                    <br>
+                    <br>
+
+                </p>
+
+                <p><label>Description of Issue
+
+                    <br> 
+                    <textarea placeholder="Write description of your problem here..."
+                    name="DescriptionOfIssue" rows="8" cols="40"></textarea>
+                    
+                     
+                
+                </label>
+                </p>
+            </fieldset>
+
+            <fieldset> 
+                <legend>Preferred Date/Time </legend>
+                <p> 
+                    <label for ="Date">Date</label>
+                    <input type = "Date" name ="Date" id = "Date"> 
+
+                    <br> 
+                    <br>
+
+                    <label for ="Time">Time</label>
+                    <input type ="time" name="Time" id ="Time">
+                </p>
+            </fieldset>
 
 
-           <input type = "submit" value = "Submit Now"> 
+           <input type = "submit" value = "Book"> 
+           <input type ="reset" value = "Reset Form">
 
         </form>
         
